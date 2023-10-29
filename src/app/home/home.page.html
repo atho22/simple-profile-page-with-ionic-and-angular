@@ -1,20 +1,56 @@
-<ion-header [translucent]="true">
+<ion-header translucent no-border>
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-buttons slot="start">
+      <ion-button color="light">
+        <ion-icon slot="start" name="ios-arrow-back"></ion-icon>
+        Favorites
+      </ion-button>
+    </ion-buttons>
+    <ion-title>&nbsp;</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" src="../../assets/checkmark-filled.svg"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content fullscreen="true" slot="fixed" >
+ 
+  <div class="card">
+    <div class="header">
+        <div class="avatar">
+            <img class="profile-image" src="assets/icon/syafna.jpeg" alt="Profile Image">
+        </div>
+    </div>
+</div>
+<audio autoplay loop>
+  <source src="assets/music/JVKE - golden hour (instrumental).mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<div class="card-body">
+  <div class="user-meta ion-text-center">
+      <h3 class="playername">Syapna</h3>
+      <h5 class="country">Banjarmasin, 02 Januari 2004</h5>
+      <h6 class="ranking"><ion-chip>
+          <ion-label>Perempuan</ion-label>
+      </ion-chip>
+      </h6>
   </div>
+  <ion-button expand="full" color="primary" class="custom-button">My Hobby <br><br> Traveling</ion-button>
+
+  <ion-button expand="full" color="secondary" class="custom-button">Mahasiswa</ion-button>
+  <ion-button expand="full" color="secondary" class="custom-button">Politeknik Negeri Tanah Laut</ion-button>
+  <ion-button expand="full" color="secondary" class="custom-button">Teknologi Informasi</ion-button>
+  <ion-button expand="full" color="secondary" class="custom-button">syapna@mhs.politala.ac.id</ion-button>
+  <ion-button expand="full" color="secondary" href="https://www.instagram.com/syapna_/?igshid=NzZlODBkYWE4Ng%3D%3D" target="_blank">
+      <ion-icon slot="start" name="logo-instagram"></ion-icon>
+      Visit Instagram Profile
+  </ion-button>
+</div>
+<h3 style="text-align: center; font-family: 'Times New Roman', Times, serif;">Riwayat Pendidikan</h3>
+<ion-button expand="full" color="secondary" class="custom-button">TK Harapan Ibu</ion-button>
+<ion-button expand="full" color="secondary" class="custom-button">SDN Sungai Lulut 2</ion-button>
+<ion-button expand="full" color="secondary" class="custom-button">SMPN 30 Banjarmasin</ion-button>
+<ion-button expand="full" color="secondary" class="custom-button">SMK Bina Banua Banjarmasin</ion-button>
 </ion-content>

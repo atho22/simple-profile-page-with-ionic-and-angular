@@ -25,3 +25,17 @@
 #container a {
   text-decoration: none;
 }
+
+.profile-image {
+  max-width: 100px; /* Adjust the size as needed */
+  max-height: 100px; /* Maintain the aspect ratio */
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+.custom-button {
+  padding: 5px 20px; /* Adjust the padding as needed to resize the background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

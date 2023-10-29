@@ -6,7 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  private audio: HTMLAudioElement;
 
-  constructor() {}
+  constructor() {
+    this.audio = document.getElementById("myAudio") as HTMLAudioElement;
+  }
 
+  ionViewDidEnter() {
+    this.audio.play(); // Autoplay the audio when the page is entered.
+  }
 }
